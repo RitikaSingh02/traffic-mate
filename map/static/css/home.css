@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+body{
+    background-image: url('../map.png');
+}
+.main
+{
+    color: #673147;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.map
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+.map iframe
+{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    border-color: teal;
+    border-style: double;
+}
+
+.form
+{
+    background-image: url('../hm.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: #CCCCFF;
+    border-width: 15px;
+    height: 500px;
+    width: 400px;
+}
+
+@keyframes example {
+    from {border-color: red;}
+    to {border-color: yellow;}
+  }
+.title
+{
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    height: 10px;
+    color: black;
+}
+.location
+{
+    height: 30px;
+    align-content: flex-start;
+    /* width: 10px; */
+}
+.id_pickup
+{
+    color:white;
+}
