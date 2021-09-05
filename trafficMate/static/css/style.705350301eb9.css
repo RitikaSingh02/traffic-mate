@@ -1,0 +1,21 @@
+body{
+    background-image: url("../map.874bf4342d34.png");
+}
+.map
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.map iframe
+{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    border-color: teal;
+    border-style: double;
+    box-shadow: saddlebrown;
+}
