@@ -12,7 +12,7 @@ function showPosition(position) {
     console.log(lat , long)
     const data = { "lat": lat.toString()  , "long" : long.toString()};
     let response_data;
-    fetch('http://127.0.0.1:8000/maps/location',
+    fetch('https://traffic-mate.herokuapp.com/maps/location',
       {
         'method':'post',
         'body':JSON.stringify(data)
@@ -32,5 +32,5 @@ function submit(){
   const drop = $('#drop').val();
   console.log(pick , drop);
   const data = { "pick": pick  , "drop" : drop};
-  location.replace("http://127.0.0.1:8000/maps/main/" + pick +'/' + drop);
+  location.replace("https://traffic-mate.herokuapp.com/maps/main/" + pick +'/' + drop);
 }
