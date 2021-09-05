@@ -1,1 +1,1 @@
-web: gunicorn PetApp.wsgi --log-file -
+web: gunicorn trafficMate.wsgi --log-file -
