@@ -7,10 +7,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <body>
-    <div class="map">
-        <iframe id = "map-field"
-            src="https://www.google.com/maps/embed/v1/directions?key={{api_key}}&origin={{origin}}&destination={{destination}}&avoid=tolls|highways" allowfullscreen>
-        </iframe>
+    <div class="main">
+        <div class="map">
+            <iframe id = "map-field"
+                src="https://www.google.com/maps/embed/v1/directions?key={{api_key}}&origin={{origin}}&destination={{destination}}&avoid=tolls|highways" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="weather">
+            <div class="first">
+                <p class="text">fastest one</p>
+                <p class="temp-first"></p>
+                <p class="desc-first"></p>
+                <img src="" id = "weather-first">
+
+            </div>
+            <div class="second">
+                <p class="second">second fastest</p>
+                <p class="temp-second"></p>
+                <p class="desc-second"></p>
+                <img src="" id = "weather-second">
+            </div>
+        </div>
     </div>
     </body>
     </html>

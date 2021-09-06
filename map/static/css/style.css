@@ -1,6 +1,16 @@
 body{
     background-image: url('../map.png');
 }
+.main
+{
+    color: #673147;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
 .map
 {
     margin: 20px;
