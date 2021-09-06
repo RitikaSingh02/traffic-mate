@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv('./.env')
 import requests
 
+def index(request):
+    return render (request , "main.html")
+    
 def home(request):
     context = {
         'api_key' : os.environ.get("maps_api"),

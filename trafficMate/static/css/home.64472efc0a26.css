@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+body{
+    background-image: url("../map.874bf4342d34.png");
+    /* background-size: cover;
+    background-color: #702963;
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%),
+                      linear-gradient(360deg, rgba(0,0,0,0) -80%, #702963 70%); */
+}
+.main
+{
+    color: #673147;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.map
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+.map iframe
+{
+    height: 500px;
+    width: 120%;
+    border-radius: 10px;
+    border-color: teal;
+    border-style: double;
+    animation-name: riz;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+.form
+{
+    /* background-image: url("../hm.235bbce4e481.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover; 
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+    linear-gradient( -385deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+    linear-gradient(-390deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+    /* linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%), */
+    /* linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%), */
+    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-style:none;
+    border-radius: 8px;
+    height: 500px;
+    width: 400px;
+}
+
+/* .form:hover span:nth-child(1)
+{
+    border:2px solid  blue;
+} */
+@keyframes riz {
+    from {border-color: teal;}
+    to {border-color: 	#AA336A;}
+  }
+
+@keyframes example {
+    from {border-color: red;}
+    to {border-color: yellow;}
+  }
+.title
+{
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    padding: 2rem;
+    line-height: 0.1em; 
+    font-family: "Avenir Next", sans-serif;
+    font-size: 25px;
+    font-weight: 200px;
+    height: 10px;
+    width: 100%;
+    color: black;
+    /* -webkit-box-reflect : below 1px;     */
+    animation-name: text;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+#getlocation
+{
+    height: 20px;
+    width: 150px;
+    margin-bottom: 10px;
+    padding-bottom: 2rem;
+    background-color: #483248;
+}
+#getlocation:hover
+{
+    border-width: 2px;
+    border-color: #C3B1E1;
+}
+
+#pick , #drop
+{
+    background: #dcdcdc;
+    width: 20px;
+}
+#pick:hover, #drop:hover
+{
+    outline: green;
+    border-width: 3px;
+    border-color: #C3B1E1;
+}
