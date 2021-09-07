@@ -1,0 +1,82 @@
+body{
+    background-image: url("../home.60b49dbeef09.png");
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.map
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.map iframe
+{
+    height: 500px;
+    width: 120%;
+    border-radius: 10px;
+    border-color: teal;
+    border-style: double;
+    animation-name: riz;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+@keyframes riz {
+    from {border-color: teal;}
+    to {border-color: 	#AA336A;}
+  }
+
+.description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.first , .second
+{
+    color: whitesmoke;
+
+}
+.first-data , .second-data
+{
+    display: flex;
+    flex-direction: row;
+    border-color: #f5f5f5;
+    border-style: double;
+    border-width: 1.6px;
+    margin-bottom: 10px;
+    border-radius:  5px;
+    box-shadow: 0 4px 8px 0 rgba(228, 178, 178, 0.2);
+}
+.first-data:hover , .second-data:hover
+{
+    box-shadow: 5px 3px 3px 3px rgba(228, 178, 178, 0.4);
+}
+#temp-first , #temp-second
+{
+    color: #ff7f50;
+}
+#temp-second-val,#temp-first-val 
+{
+    color: blue;
+    font-size: 25px;
+}
+img{
+    outline: chocolate;
+    filter: blur(1px);
+}

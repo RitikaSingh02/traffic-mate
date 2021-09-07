@@ -1,8 +1,8 @@
 <html>
     {% load static %}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src = "{% static 'js/index.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/weather.css' %}">
+    <script src = "{% static 'js/weather.js' %}"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
@@ -15,17 +15,27 @@
         </div>
         <div class="weather">
             <div class="first">
-                <p class="text">fastest one</p>
-                <p class="temp-first"></p>
-                <p class="desc-first"></p>
+                <p class="text">Fastest Route Weather Conditions</p>
+                <div class="first-data">
                 <img src="" id = "weather-first">
+                <div class="description">
+                    <p id="temp-first"></p>
+                    <p id="temp-first-val"></p>
+                    <p id="desc-first"></p>
+                </div>
+                </div>
 
             </div>
             <div class="second">
-                <p class="second">second fastest</p>
-                <p class="temp-second"></p>
-                <p class="desc-second"></p>
+                <p class="text">Second Fastest Route Weather Conditions</p>
+                <div class="second-data">
                 <img src="" id = "weather-second">
+                <div class="description">
+                    <p id="temp-second"></p>
+                    <p id="temp-second-val"></p>
+                    <p id="desc-second"></p>
+                </div>
+                </div>
             </div>
         </div>
     </div>

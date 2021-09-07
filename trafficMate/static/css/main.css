@@ -8,12 +8,13 @@
 }
 body
 {
+    background-image: url("../main.png") !important;
+    background-size: cover; 
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
 }
 h1
 {
@@ -31,7 +32,7 @@ h1
    }
    50%
    {
-       width: 19ch;
+       width: 20ch;
    }
 }
 

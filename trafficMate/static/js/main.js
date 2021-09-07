@@ -1,3 +1,4 @@
-const click = ()=>{
-    window.location.href = window.location.host + '/maps/home'; 
+function clickme(){
+    // console.log("yksdjfhkdsj");
+    window.location.href ='/maps/home'; 
 }

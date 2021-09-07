@@ -67,7 +67,7 @@ def main(request , pick , drop):
             'origin' :  pick,
             'destination': drop,
         }
-        return render (request , "first.html" , context)
+        return render (request , "weather.html" , context)
     res['msg'] = "method not allowed"
     return JsonResponse(res , safe = False , status = 405)
 
@@ -76,6 +76,7 @@ def get_coordinates(request):
     if request.method == "POST":
         data = json.loads(request.body)
         drop = data['drop']
+        print(drop)
         URL = "https://api.opencagedata.com/geocode/v1/json?q="+drop+ "&key="+os.environ.get("open_api")
         r = requests.get(url = URL)
         result = r.json()
